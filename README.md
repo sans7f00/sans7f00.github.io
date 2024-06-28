@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <head></head>
 <body>
       <h1>hello.</h1>
