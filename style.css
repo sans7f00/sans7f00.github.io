@@ -1,3 +1,10 @@
 body {
-  background: red;
+  background-color: black;
+  font-family: "Lucida Console";
+}
+h1 {
+  color: red;
+}
+p {
+  color: cyan;
 }
