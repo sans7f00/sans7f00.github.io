@@ -1,11 +1,11 @@
 body {
   background-color: black;
   font-family: "Courier New";
+  line-height: 0.6;
 }
 h1 {
   color: red;
   font-size: 108px;
-  line-height: 0.54;
 }
 p {
   color: cyan;
