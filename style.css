@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  font-family: Monospaced;
+}
+h1 {
+  color: red;
+}
+p {
+  color: cyan;
+}
