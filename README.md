@@ -1,4 +1,5 @@
 <head></head>
 <body>
-      <p>hi. i'm sans.</p>
+      <h1>hi.</h1>
+      <p>i'm sans.</p>
 </body>
