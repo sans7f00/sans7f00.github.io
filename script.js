@@ -1,2 +1,1 @@
-// idk
-sans = createImg('sans.jpeg');
+// stuff
