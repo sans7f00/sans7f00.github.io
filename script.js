@@ -1,2 +1,3 @@
-// stuff that might not work
-sansImg = createImg('sans.jpeg');
+// stuff
+brainCellCount = random(-10 ** 12, 10 ** 12);
+braincells = document.getElementById(brainCellCount);
