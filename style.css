@@ -4,7 +4,10 @@ body {
 }
 h1 {
   color: red;
+  font-size: 108px;
+  line-height: 0.54;
 }
 p {
-  color: blue;
+  color: cyan;
+  font-size: 18px;
 }
