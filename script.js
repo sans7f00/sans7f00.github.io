@@ -9,5 +9,5 @@ setInterval(() => {
   } else {
     brainCellCount **= 1.01;
   }
-}, 50);
+}, 333);
 document.getElementById("braincells").innerHTML = brainCellCount;
