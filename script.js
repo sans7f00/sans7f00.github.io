@@ -1,6 +1,5 @@
 // randomness
 brainCellCount = (Math.random() * 10 ** 12 - Math.random() * 10 ** 12).toPrecision(3);
-// WARNING! code might not work
 if (brainCellCount < 0) {
   setInterval(() => {
     brainCellCount = (Math.abs(brainCellCount) ** 1.01) * -1;
