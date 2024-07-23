@@ -7,10 +7,12 @@ if (brainCellCount < 0) {
   }, 50);
 } else if (brainCellCount = 0) { // highly unlikely
   brainCellCount = 1;
+  document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
 } else {
   setInterval(() => {
     brainCellCount **= 1.01;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
   }, 50);
 }
+
 document.getElementById("braincells").innerHTML = brainCellCount;
