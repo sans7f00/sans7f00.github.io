@@ -15,4 +15,6 @@ if (brainCellCount < 0) {
   }, 50);
 }
 
+iq = brainCellCount ** 0.09;
+
 document.getElementById("braincells").innerHTML = brainCellCount;
