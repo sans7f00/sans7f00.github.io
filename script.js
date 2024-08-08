@@ -7,7 +7,7 @@ if (brainCellCount < 0) {
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     if (iq < 1000) {
       document.getElementById("iq").innerHTML = iq.toFixed(0);
-    } else {
+    } else if (iq >= 1000) {
       document.getElementById("iq").innerHTML = iq.toPrecision(3);
     }
   }, 50);
@@ -21,7 +21,7 @@ if (brainCellCount < 0) {
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     if (iq < 1000) {
       document.getElementById("iq").innerHTML = iq.toFixed(0);
-    } else {
+    } else if (iq >= 1000) {
       document.getElementById("iq").innerHTML = iq.toPrecision(3);
     }
   }, 50);
