@@ -3,7 +3,7 @@ brainCellCount = (Math.random() * 10 ** 12 - Math.random() * 10 ** 12).toPrecisi
 if (brainCellCount < 0) {
   setInterval(() => {
     brainCellCount = (Math.abs(brainCellCount) ** 1.01) * -1;
-    iq = ((Math.abs(brainCellCount) ** 0.09) * -1).toPrecision(3);
+    iq = (Math.abs(brainCellCount) ** 0.09).toPrecision(3) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
   }, 50);
