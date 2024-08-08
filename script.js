@@ -5,11 +5,7 @@ if (brainCellCount < 0) {
     brainCellCount = (Math.abs(brainCellCount) ** 1.01) * -1;
     iq = (Math.abs(brainCellCount) ** 0.09) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
-    if (iq < 1000) {
-      document.getElementById("iq").innerHTML = iq.toFixed(0);
-    } else if (iq >= 1000) {
-      document.getElementById("iq").innerHTML = iq.toPrecision(3);
-    }
+    document.getElementById("iq").innerHTML = iq.toPrecision(3);
   }, 50);
 } else if (brainCellCount = 0) {
   iq = 0;
@@ -19,10 +15,6 @@ if (brainCellCount < 0) {
     brainCellCount **= 1.01;
     iq = brainCellCount ** 0.09;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
-    if (iq < 1000) {
-      document.getElementById("iq").innerHTML = iq.toFixed(0);
-    } else if (iq >= 1000) {
-      document.getElementById("iq").innerHTML = iq.toPrecision(3);
-    }
+    document.getElementById("iq").innerHTML = iq.toPrecision(3)
   }, 50);
 }
