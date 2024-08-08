@@ -5,7 +5,7 @@ if (brainCellCount < 0) {
     brainCellCount = (Math.abs(brainCellCount) ** 1.01) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
   }, 50);
-} else if (brainCellCount = 0) { // highly unlikely
+} else if (brainCellCount = 0) {
   brainCellCount = 1;
   document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
 } else {
