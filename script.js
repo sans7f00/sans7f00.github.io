@@ -1,3 +1,4 @@
+import Decimal from "break_infinity.js";
 // WARNING! might be faulty
 brainCellCount = (Math.random() * 10 ** 12 - Math.random() * 10 ** 12).toPrecision(3);
 if (brainCellCount < 0) {
