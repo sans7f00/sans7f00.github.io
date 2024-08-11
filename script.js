@@ -20,5 +20,11 @@ if (brainCellCount < 0) {
     iq = brainCellCount ** 0.09;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
+    if (brainCellCount - upgrade1Cost >= 0) {
+      brainCellCount -= upgrade1Cost;
+      cellGrowth *= 1.1;
+      upgrade1mult *= 1.1;
+      upgrade1Cost *= 1.15;
+    }
   }, 25);
 }
