@@ -44,7 +44,7 @@ if (brainCellCount < 0) {
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
   }, 1);
 }
-if (brainCellCount >= 10 ** 10) {
+if (brainCellCount >= 9 ** 9) {
   if (Math.log(Math.log(brainCellCount)) % 1 == 0) {
     multForEachUpgrade += 0.05;
     costScaling += 0.05;
