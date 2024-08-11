@@ -1,5 +1,5 @@
 // WARNING! might be faulty
-brainCellCount = (Math.random() * 10 ** 12 - Math.random() * 10 ** 12).toPrecision(3);
+brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 if (brainCellCount < 0) {
   // this happens every 50 ms
   setInterval(() => {
@@ -14,7 +14,7 @@ if (brainCellCount < 0) {
   setInterval(() => {
     brainCellCount = 0; // hehehe
     brainCellCount++;
-    iq = (brainCellCount ** 0.09).toPrecision(3);
+    iq = brainCellCount ** 0.09;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
   }, 25);
