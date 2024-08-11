@@ -15,8 +15,7 @@ if (brainCellCount < 0) {
   }, 50);
 } else {
   brainCellCount = 0;
-  /* this happens every 25 seconds, but the brain cell growth is linear compared to exponential when brainCellCount is negative
-  so you would have not much brain cells */
+  // this happens every 25 ms
   setInterval(() => {
     brainCellCount += cellGrowth;
     iq = brainCellCount ** 0.09 * previousIq;
@@ -34,7 +33,11 @@ if (brainCellCount < 0) {
       iq *= previousIq;
       upgrade1mult *= previousIq;
       cellGrowth *= previousIq;
-      upgrade2Cost *= 10 ** 6;
+      upgrade2Cost *= 10 ** 3;
+    }
+    if (brainCellCount >= 10 ** 10) {
+      cellGrowth *= iq;
+      upgrade1mult *= iq;
     }
     document.getElementById("bcb").innerHTML = upgrade1mult.toPrecision(3);
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
