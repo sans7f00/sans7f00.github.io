@@ -9,19 +9,6 @@
       <info>You have <braincells id="braincells"></braincells> brain cells,</info>
       <info>which corresponds to an IQ of <iq id="iq"></iq></info>
       <script src="script.js"></script>
-      <script>
-        // upgrade button
-        const upgrade1 = document.createElement('button');
-        upgrade1.innerText = `Increase brain cell growth by 10%\n${upgrade1mult.toPrecision(3)} -> ${(upgrade1mult * 1.1).toPrecision3}\nCost: ${upgrade1Cost}`
-        upgrade1.addEventListener('click', () => {
-          if (brainCellCount - upgrade1Cost >= 0) {
-            brainCellCount -= upgrade1Cost;
-            cellGrowth *= 1.1;
-            upgrade1mult *= 1.1;
-            upgrade1Cost *= 1.15;
-          }
-        })
-      </script>
     </body>
   </head>
 </html>
