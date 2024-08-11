@@ -14,9 +14,16 @@ p {
 info {
   color: lime;
   font-size: 18px;
-  text-align: center;
 }
-braincells, iq {
+braincells, iq, bcb, iqb {
   color: red;
   font-size: 18px;
+}
+boost1 {
+  color: lime;
+  font-size: 12px;
+}
+boost2 {
+  color: lime;
+  font-size: 12px;
 }
