@@ -13,7 +13,10 @@ if (brainCellCount < 0) {
   so you would have not much brain cells */
   setInterval(() => {
     brainCellCount = 0; // hehehe
-    brainCellCount++;
+    // debugging
+    setInterval(() => {
+      brainCellCount++;
+    }, 1000);
     iq = brainCellCount ** 0.09;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
