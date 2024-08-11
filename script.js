@@ -10,9 +10,10 @@ if (brainCellCount < 0) {
 } else {
   setInterval(() => {
     brainCellCount++;
-    brainCellCount **= 1.01;
     iq = (brainCellCount ** 0.09).toPrecision(3);
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
-  }, 50);
+  }, 25);
 }
+
+sans = createImg('https://raw.githubusercontent.com/sans7f00/sans7f00.github.io/main/sans.jpeg', '...');
