@@ -11,13 +11,8 @@ p {
   color: cyan;
   font-size: 18px;
 }
-info1 {
+info {
   color: lime;
-  font-size: 18px;
-  text-align: center;
-}
-info2 {
-  color: cyan;
   font-size: 18px;
   text-align: center;
 }
