@@ -1,6 +1,8 @@
 // WARNING! might be faulty
 brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 cellGrowth = 1;
+upgrade1Cost = 1000;
+upgrade1mult = 1;
 if (brainCellCount < 0) {
   // this happens every 50 ms
   setInterval(() => {
@@ -20,3 +22,14 @@ if (brainCellCount < 0) {
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
   }, 25);
 }
+
+// upgrade button
+if (brainCellCount >= 1000 && brainCellCount - upgrade1Cost >= 0) {
+  const upgrade1 = document.createElement('button');
+  button.innerText = `Increase brain cell growth by 10%\n${upgrade1mult} -> ${(upgrade1mult * 1.1)}\nCost: ${upgrade1Cost}`
+  button.addEventListener('click', () => {
+    brainCellCount -= upgrade1Cost;
+    cellGrowth *= 1.1;
+    upgrade1Cost *= 1.15;
+  })
+} 
