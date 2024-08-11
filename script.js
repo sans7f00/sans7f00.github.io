@@ -1,7 +1,7 @@
 // WARNING! might be faulty
 brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 cellGrowth = 1;
-upgrade1Cost = 1000;
+upgrade1Cost = 1;
 upgrade1mult = 1;
 upgrade2Cost = 10 ** 6;
 previousIq = 1;
