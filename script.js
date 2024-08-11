@@ -24,12 +24,14 @@ if (brainCellCount < 0) {
 }
 
 // upgrade button
-if (brainCellCount >= 1000 && brainCellCount - upgrade1Cost >= 0) {
-  const upgrade1 = document.createElement('button');
-  button.innerText = `Increase brain cell growth by 10%\n${upgrade1mult} -> ${(upgrade1mult * 1.1)}\nCost: ${upgrade1Cost}`
-  button.addEventListener('click', () => {
+const upgrade1 = document.createElement('button');
+button.innerText = `Increase brain cell growth by 10%\n${upgrade1mult} -> ${(upgrade1mult * 1.1)}\nCost: ${upgrade1Cost}`
+button.addEventListener('click', () => {
+  if (brainCellCount >= 1000 && brainCellCount - upgrade1Cost >= 0) {
     brainCellCount -= upgrade1Cost;
     cellGrowth *= 1.1;
+    upgrade1mult *= 1.1;
     upgrade1Cost *= 1.15;
-  })
-} 
+  }
+})
+ 
