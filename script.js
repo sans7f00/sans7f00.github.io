@@ -19,7 +19,7 @@ if (brainCellCount < 0) {
   so you would have not much brain cells */
   setInterval(() => {
     brainCellCount += cellGrowth;
-    iq = brainCellCount ** 0.09;
+    iq = brainCellCount ** 0.09 * previousIq;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
     if (brainCellCount - upgrade1Cost >= 0) {
