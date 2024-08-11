@@ -28,12 +28,15 @@ if (brainCellCount < 0) {
       upgrade1Cost *= 1.15;
     }
     if (brainCellCount - upgrade2Cost >= 0) {
+      iq /= previousIq;
+      upgrade1mult /= previousIq;
+      cellGrowth /= previousIq;
       previousIq = iq;
       brainCellCount -= upgrade2Cost;
       iq *= previousIq;
       upgrade1mult *= previousIq;
       cellGrowth *= previousIq;
-      upgrade2Cost *= 10 ** 3;
+      upgrade2Cost *= (10 ** 3 * previousIq);
     }
     document.getElementById("bcb").innerHTML = upgrade1mult.toPrecision(3);
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
