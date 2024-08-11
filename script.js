@@ -9,7 +9,7 @@ if (brainCellCount < 0) {
   }, 50);
 } else if (brainCellCount = 0) {
   document.getElementById("braincells").innerHTML = 0;
-  document.getElementById("iq").innerHTML = 0;
+  document.getElementById("iq").innerHTML = brainCellCount;
 } else {
   setInterval(() => {
     brainCellCount **= 1.01;
