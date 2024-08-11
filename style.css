@@ -11,7 +11,12 @@ p {
   color: cyan;
   font-size: 18px;
 }
-info1, info2 {
+info1 {
+  color: lime;
+  font-size: 18px;
+  text-align: center;
+}
+info2 {
   color: cyan;
   font-size: 18px;
   text-align: center;
@@ -19,5 +24,4 @@ info1, info2 {
 braincells, iq {
   color: red;
   font-size: 18px;
-  text-align: center;
 }
