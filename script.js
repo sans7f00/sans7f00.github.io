@@ -38,3 +38,9 @@ if (brainCellCount < 0) {
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
   }, 1);
 }
+
+createCanvas(960, 540);
+background(red);
+line(96, 108, 288, 108)
+line(672, 108, 864, 108)
+line(336, 432, 624, 432)
