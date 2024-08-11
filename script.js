@@ -1,5 +1,6 @@
 // WARNING! might be faulty
 brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
+cellGrowth = 1;
 if (brainCellCount < 0) {
   // this happens every 50 ms
   setInterval(() => {
@@ -9,11 +10,10 @@ if (brainCellCount < 0) {
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
   }, 50);
 } else {
+  brainCellCount = 0;
   /* this happens every 25 seconds, but the brain cell growth is linear compared to exponential when brainCellCount is negative
   so you would have not much brain cells */
   setInterval(() => {
-    brainCellCount = 0; // hehehe
-    cellGrowth = 1;
     brainCellCount += cellGrowth;
     iq = brainCellCount ** 0.09;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
