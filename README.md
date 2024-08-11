@@ -1,9 +1,1 @@
-<!DOCTYPE HTML>
-<html>
-      <head>
-            <body>
-                  <p>hi. i'm sans.</p>
-                  <p>i exist.</p>
-            </body>
-      </head>
-</html>
+hi. i'm sans.
