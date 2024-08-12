@@ -1,15 +1,12 @@
 // WARNING! might be faulty
-function setup() {
-  createCanvas(960, 540);
-  brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
-  cellGrowth = 1;
-  upgrade1Cost = 1;
-  upgrade1mult = 1;
-  multForEachUpgrade = 1.1;
-  costScaling = 1.15;
-  upgrade2Cost = 10 ** 6;
-  previousIq = 1;
-}
+brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
+cellGrowth = 1;
+upgrade1Cost = 1;
+upgrade1mult = 1;
+multForEachUpgrade = 1.1;
+costScaling = 1.15;
+upgrade2Cost = 10 ** 6;
+previousIq = 1;
 if (brainCellCount < 0) {
   // this happens every 50 ms
   setInterval(() => {
