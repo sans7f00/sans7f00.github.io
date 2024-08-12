@@ -48,6 +48,13 @@ if (brainCellCount >= 9 ** 9) {
   if (Math.log(Math.log(brainCellCount)) % 1 == 0) {
     multForEachUpgrade += 0.05;
     costScaling += 0.05;
+    if (previousIq >= 9 ** 9) {
+      cellGrowth *= 9 ** 9;
+      upgrade1mult *= 9 ** 9;
+    } else {
+      cellGrowth *= previousIq;
+      upgrade1mult *= previousIq;
+    }
   }
 }
 /* this is the end for now
