@@ -10,20 +10,20 @@ h1 {
 p {
   color: cyan;
   font-size: 18px;
+  line-height: normal;
 }
 info {
   color: lime;
   font-size: 12px;
+  line-height: normal;
 }
 braincells, iq, bcb, iqb {
   color: red;
   font-size: 18px;
+  line-height: normal;
 }
-boost1 {
+boost {
   color: lime;
   font-size: 12px;
-}
-boost2 {
-  color: lime;
-  font-size: 12px;
+  line-height: normal;
 }
