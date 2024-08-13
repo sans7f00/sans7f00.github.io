@@ -15,6 +15,7 @@ p {
 info {
   color: lime;
   font-size: 12px;
+  text-align: center;
   line-height: normal;
 }
 braincells, iq, bcb, iqb {
@@ -25,5 +26,6 @@ braincells, iq, bcb, iqb {
 boost {
   color: lime;
   font-size: 12px;
+  text-align: center;
   line-height: normal;
 }
