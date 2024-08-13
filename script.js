@@ -10,7 +10,7 @@ previousIq = 1;
 if (brainCellCount < 0) {
   // this happens every 50 ms
   setInterval(() => {
-    brainCellCount = (Math.abs(brainCellCount) ** 1.01) * -1;
+    brainCellCount = (Math.abs(brainCellCount) ** 1.0055) * -1;
     iq = (Math.abs(brainCellCount) ** 0.09).toPrecision(3) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
@@ -44,7 +44,7 @@ if (brainCellCount < 0) {
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
   }, 1);
 }
-if (Math.log(brainCellCount) % 10 == 0 && brainCellCount > 1) {
+if (Math.log10(brainCellCount) % 10 == 0 && brainCellCount > 1) {
   multForEachUpgrade += 0.50;
   costScaling += 0.50;
   if (previousIq >= 9 ** 9) {
