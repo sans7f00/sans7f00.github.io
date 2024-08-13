@@ -3,8 +3,8 @@ brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 cellGrowth = 1;
 upgrade1Cost = 1;
 upgrade1mult = 1;
-multForEachUpgrade = 1.1;
-costScaling = 1.15;
+multForEachUpgrade = 2;
+costScaling = 3;
 upgrade2Cost = 10 ** 6;
 previousIq = 1;
 if (brainCellCount < 0) {
@@ -45,9 +45,9 @@ if (brainCellCount < 0) {
   }, 1);
 }
 if (brainCellCount >= 9.99 ** 9.99) {
-  if (Math.log(Math.log(brainCellCount)) % 1 == 0) {
-    multForEachUpgrade += 0.05;
-    costScaling += 0.05;
+  if (Math.log(brainCellCount) % 10 == 0) {
+    multForEachUpgrade += 0.50;
+    costScaling += 0.50;
   }
   if (previousIq >= 9 ** 9) {
     cellGrowth *= 9 ** 9;
