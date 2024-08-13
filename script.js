@@ -44,11 +44,9 @@ if (brainCellCount < 0) {
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
   }, 1);
 }
-if (brainCellCount >= 9.99 ** 9.99) {
-  if (Math.log(brainCellCount) % 10 == 0) {
-    multForEachUpgrade += 0.50;
-    costScaling += 0.50;
-  }
+if (Math.log(brainCellCount) % 10 == 0 && brainCellCount > 1) {
+  multForEachUpgrade += 0.50;
+  costScaling += 0.50;
   if (previousIq >= 9 ** 9) {
     cellGrowth *= 9 ** 9;
     upgrade1mult *= 9 ** 9;
@@ -58,4 +56,4 @@ if (brainCellCount >= 9.99 ** 9.99) {
   }
 }
 /* this is the end for now
-bye */
+bye ...*/
