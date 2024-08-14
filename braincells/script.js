@@ -14,7 +14,7 @@ if (brainCellCount < 0) {
     iq = (Math.abs(brainCellCount) ** 0.09).toPrecision(3) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
-    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3);
+    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + "brain cells";
   }, 50);
 } else {
   brainCellCount = 1;
