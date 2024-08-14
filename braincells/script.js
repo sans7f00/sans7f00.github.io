@@ -14,6 +14,7 @@ if (brainCellCount < 0) {
     iq = (Math.abs(brainCellCount) ** 0.09).toPrecision(3) * -1;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
+    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3);
   }, 50);
 } else {
   brainCellCount = 1;
@@ -23,6 +24,7 @@ if (brainCellCount < 0) {
     iq = brainCellCount ** 0.09 * previousIq;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
+    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3);
     if (brainCellCount - upgrade1Cost >= 0) {
       brainCellCount -= upgrade1Cost;
       cellGrowth *= multForEachUpgrade;
