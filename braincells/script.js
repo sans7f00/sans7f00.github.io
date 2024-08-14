@@ -3,8 +3,8 @@ brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 cellGrowth = 1;
 upgrade1Cost = 1;
 upgrade1mult = 1;
-multForEachUpgrade = 1.02;
-costScaling = 1.03;
+multForEachUpgrade = 1.07;
+costScaling = 1.08;
 upgrade2Cost = 10 ** 6;
 previousIq = 1;
 if (brainCellCount < 0) {
@@ -20,7 +20,13 @@ if (brainCellCount < 0) {
   brainCellCount = 1;
   // this happens every 25 ms
   setInterval(() => {
-    brainCellCount += cellGrowth;
+    if (brainCellCount < 10 ** 10) {
+      brainCellCount += cellGrowth;
+    } else if (iq < 9 ** 9) {
+      brainCellCount += cellGrowth * iq;
+    } else {
+      brainCellCount += cellGrowth * 9 ** 9;
+    }
     iq = brainCellCount ** 0.09 * previousIq;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
