@@ -1,1 +1,10 @@
-
+body {
+  background-color: black;
+  font-family: "Courier New";
+  line-height: 0.25;
+}
+p {
+  color: cyan;
+  font-size: 18px;
+  line-height: normal;
+}
