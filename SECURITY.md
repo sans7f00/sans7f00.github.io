@@ -2,7 +2,9 @@
 
 ## Supported Versions
 v2.5.x: Supported
+<br>
 v2.4.x: Supported
+<br>
 < v2.4.0: No longer used
 
 ## Reporting a Vulnerability
