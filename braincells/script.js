@@ -3,8 +3,8 @@ brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
 cellGrowth = 1;
 upgrade1Cost = 1;
 upgrade1mult = 1;
-multForEachUpgrade = 2;
-costScaling = 3;
+multForEachUpgrade = 1.02;
+costScaling = 1.03;
 upgrade2Cost = 10 ** 6;
 previousIq = 1;
 if (brainCellCount < 0) {
