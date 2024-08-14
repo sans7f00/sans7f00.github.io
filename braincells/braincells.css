@@ -3,15 +3,6 @@ body {
   font-family: "Courier New";
   line-height: 0.25;
 }
-h1 {
-  color: red;
-  font-size: 108px;
-}
-p {
-  color: cyan;
-  font-size: 18px;
-  line-height: normal;
-}
 info {
   color: lime;
   font-size: 12px;
