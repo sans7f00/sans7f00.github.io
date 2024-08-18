@@ -12,9 +12,9 @@ if (brainCellCount < 0) {
   const resetButton = document.createElement('button');
   resetButton.innerText = 'Reset';
   // Event listener that activates when button is clicked
-  button.addEventListener('click', () => {
+  /* button.addEventListener('click', () => {
     alert('Error 400: Bad Request')
-  })
+  }) */
   document.body.appendChild(resetButton);
   // this happens every 50 ms
   setInterval(() => {
