@@ -73,6 +73,16 @@ if (brainCellCount < 0) {
 // reset function for brainCellCount = negative 'Infinity'
 function reset0() {
   brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
+  document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
+  document.getElementById("iq").innerHTML = iq.toPrecision(3);
+  document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
+  if (brainCellCount < 0) {
+    document.getElementById("bcb").innerHTML = '-1';
+    document.getElementById("iqb").innerHTML = '-1';
+  } else {
+    document.getElementById("bcb").innerHTML = upgrade1mult.toPrecision(3);
+    document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
+  }
 }
 
 // reset function for brainCellCount = positive 'Infinity'
