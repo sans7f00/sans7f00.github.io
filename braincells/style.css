@@ -3,7 +3,7 @@ body {
   font-family: "Courier New";
   line-height: 0.25;
 }
-info {
+info, boost {
   color: lime;
   font-size: 24px;
   text-align: center;
@@ -12,11 +12,5 @@ info {
 braincells, iq, bcb, iqb {
   color: red;
   font-size: 36px;
-  line-height: normal;
-}
-boost {
-  color: lime;
-  font-size: 24px;
-  text-align: center;
   line-height: normal;
 }
