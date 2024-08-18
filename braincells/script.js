@@ -12,7 +12,7 @@ if (brainCellCount < 0) {
   const resetButton = document.createElement('button');
   resetButton.innerText = 'Reset';
   // only executes if brainCellCount = '-Infinity
-  if (brainCellCount <= 2 ** 1024 * -1) {
+  if (brainCellCount == Number.NEGATIVE_INFINITY) {
     // Event listener that activates when button is clicked
     button.addEventListener('click', () => {
       reset0();
