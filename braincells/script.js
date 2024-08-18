@@ -1,14 +1,26 @@
 // WARNING! might be faulty
-brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
-cellGrowth = 1;
-upgrade1Cost = 1;
-upgrade1mult = 1;
-multForEachUpgrade = 1.07;
-costScaling = 1.08;
-upgrade2Cost = 10 ** 6;
-previousIq = 1;
-prestigeExpBoost = 1;
+function setup() {
+  brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
+  cellGrowth = 1;
+  upgrade1Cost = 1;
+  upgrade1mult = 1;
+  multForEachUpgrade = 1.07;
+  costScaling = 1.08;
+  upgrade2Cost = 10 ** 6;
+  previousIq = 1;
+}
 if (brainCellCount < 0) {
+  // reset button
+  const resetButton = document.createElement('button');
+  resetButton.innerText = 'Reset';
+  // only executes if brainCellCount = '-Infinity
+  if (brainCellCount <= 2 ** 1024 * -1) {
+    // Event listener that activates when button is clicked
+    button.addEventListener('click', () => {
+      reset0();
+      alert('Your brain cell count has been reset.')
+    })
+  }
   // this happens every 50 ms
   setInterval(() => {
     brainCellCount = (Math.abs(brainCellCount) ** 1.0055) * -1;
@@ -16,6 +28,8 @@ if (brainCellCount < 0) {
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
     document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
+    document.getElementById("bcb").innerHTML = '-1';
+    document.getElementById("iqb").innerHTML = '-1';
   }, 50);
 } else {
   brainCellCount = 1;
@@ -31,7 +45,7 @@ if (brainCellCount < 0) {
     iq = brainCellCount ** 0.09 * previousIq;
     document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
     document.getElementById("iq").innerHTML = iq.toPrecision(3);
-    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3);
+    document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
     if (brainCellCount - upgrade1Cost >= 0) {
       brainCellCount -= upgrade1Cost;
       cellGrowth *= multForEachUpgrade;
@@ -50,24 +64,25 @@ if (brainCellCount < 0) {
       upgrade2Cost *= (10 ** 3 * previousIq);
     }
     if (brainCellCount >= 2 ** 1024) {
-      reset();
+      reset1();
     }
     document.getElementById("bcb").innerHTML = upgrade1mult.toPrecision(3);
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
   }, 1);
 }
 
-function reset() {
+// reset function for brainCellCount = negative 'Infinity'
+function reset0() {
+  setup();
+}
+
+// reset function for brainCellCount = positive 'Infinity'
+function reset1() {
   brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
-  prestigeExpBoost++;
+  prestigeBoost++;
   cellGrowth *= 5;
   upgrade1Cost **= 0.99;
   upgrade1mult **= 5;
-  // resets to default values before executing the next line of code because otherwise, you might end up with infinity in 0 seconds since I haven't added breakinfinity.js or anything like that
-  multforEachUpgrade = 1.07;
-  multForEachUpgrade **= prestigeExpBoost;
-  costScsling = 1.08;
-  costScaling **= prestigeExpBoost;
   upgrade2Cost **= 0.99;
   previousIq **= 5;
 }
