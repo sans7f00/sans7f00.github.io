@@ -1,17 +1,12 @@
 // WARNING! might be faulty
-function setup() {
-  brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
-  cellGrowth = 1;
-  upgrade1Cost = 1;
-  upgrade1mult = 1;
-  multForEachUpgrade = 1.07;
-  costScaling = 1.08;
-  upgrade2Cost = 10 ** 6;
-  previousIq = 1;
-  document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
-  document.getElementById("iq").innerHTML = iq.toPrecision(3);
-  document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
-}
+brainCellCount = Math.random() * 10 ** 12 - Math.random() * 10 ** 12;
+cellGrowth = 1;
+upgrade1Cost = 1;
+upgrade1mult = 1;
+multForEachUpgrade = 1.07;
+costScaling = 1.08;
+upgrade2Cost = 10 ** 6;
+previousIq = 1;
 if (brainCellCount < 0) {
   // reset button
   const resetButton = document.createElement('button');
@@ -24,6 +19,7 @@ if (brainCellCount < 0) {
       alert('Your brain cell count has been reset.')
     })
   }
+  document.body.appendChild(resetButton);
   // this happens every 50 ms
   setInterval(() => {
     brainCellCount = (Math.abs(brainCellCount) ** 1.0055) * -1;
@@ -76,7 +72,7 @@ if (brainCellCount < 0) {
 
 // reset function for brainCellCount = negative 'Infinity'
 function reset0() {
-  setup();
+  brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
 }
 
 // reset function for brainCellCount = positive 'Infinity'
