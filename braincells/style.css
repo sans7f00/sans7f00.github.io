@@ -5,18 +5,18 @@ body {
 }
 info {
   color: lime;
-  font-size: 12px;
+  font-size: 24px;
   text-align: center;
   line-height: normal;
 }
 braincells, iq, bcb, iqb {
   color: red;
-  font-size: 18px;
+  font-size: 36px;
   line-height: normal;
 }
 boost {
   color: lime;
-  font-size: 12px;
+  font-size: 24px;
   text-align: center;
   line-height: normal;
 }
