@@ -13,10 +13,15 @@ if (brainCellCount < 0) {
   resetButton.innerText = 'Reset';
   // only executes if brainCellCount = '-Infinity
   if (brainCellCount == Number.NEGATIVE_INFINITY) {
-    // Event listener that activates when button is clicked
+    // Event listener that activates when button is clicked if the above condition is true
     button.addEventListener('click', () => {
       reset0();
       alert('Your brain cell count has been reset.')
+    })
+  } else {
+    // if brainCellCount is not -Infinity
+    button.addEventListener('click', () => {
+      alert('You do not have -Infinity brain cells yet!')
     })
   }
   document.body.appendChild(resetButton);
