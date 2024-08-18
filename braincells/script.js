@@ -79,7 +79,6 @@ function reset0() {
 // reset function for brainCellCount = positive 'Infinity'
 function reset1() {
   brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
-  prestigeBoost++;
   cellGrowth *= 5;
   upgrade1Cost **= 0.99;
   upgrade1mult **= 5;
