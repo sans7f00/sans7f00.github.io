@@ -8,6 +8,9 @@ function setup() {
   costScaling = 1.08;
   upgrade2Cost = 10 ** 6;
   previousIq = 1;
+  document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
+  document.getElementById("iq").innerHTML = iq.toPrecision(3);
+  document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
 }
 if (brainCellCount < 0) {
   // reset button
