@@ -1,17 +1,14 @@
 body {
   background: black;
   font-family: "Lucida Console", "Courier New";
-  color: black;
-  animation-name: changeColor;
-  animation-duration: 0.0099s;
+  color: red;
+  border-right: 2px solid red;
+  animation-name: typewriter;
+  animation-duration: 0.75s;
   animation-iteration-count: infinite;
 }
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-@keyframes changeColor {
-  0% {color: black;}
-  50% {color: red;}
-  100% {color: black;}
+@keyframes typewriter {
+  0% {border-right: transparent;}
+  50% {border-right: 2px solid red;}
+  100% {border-right: transparent;}
 }
