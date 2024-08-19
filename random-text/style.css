@@ -3,12 +3,4 @@ body {
   font-family: "Lucida Console", "Courier New";
   color: red;
   border-right: 2px solid red;
-  animation-name: blinkingCursor;
-  animation-duration: 0.75s;
-  animation-iteration-count: infinite;
-}
-@keyframes blinkingCursor {
-  0% {border-right: transparent;}
-  50% {border-right: 2px solid red;}
-  100% {border-right: transparent;}
 }
