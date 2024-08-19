@@ -12,9 +12,9 @@ if (brainCellCount < 0) {
   const resetButton = document.createElement('button');
   resetButton.innerText = 'Reset';
   // Event listener that activates when button is clicked
-  /* button.addEventListener('click', () => {
-    alert('Error 400: Bad Request')
-  }) */
+  button.addEventListener('click', () => {
+    alert('This does not work.')
+  })
   document.body.appendChild(resetButton);
   // this happens every 50 ms
   setInterval(() => {
@@ -86,8 +86,10 @@ function reset1() {
   brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
   cellGrowth *= 5;
   upgrade1Cost **= 0.99;
+  upgrade1mult *= 5;
   upgrade1mult **= 5;
   upgrade2Cost **= 0.99;
+  previousIq *= 5;
   previousIq **= 5;
 }
 /* this is the end for now
