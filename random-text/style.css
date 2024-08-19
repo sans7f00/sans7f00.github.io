@@ -1,0 +1,17 @@
+body {
+  background: black;
+  font-family: "Lucida Console", "Courier New";
+  color: black;
+  animation-name: changeColor;
+  animation-duration: 0.0099s;
+  animation-iteration-count: infinite;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@keyframes changeColor {
+  0% {color: black;}
+  50% {color: red;}
+  100% {color: black;}
+}
