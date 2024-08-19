@@ -31,7 +31,7 @@ function typeWriter() {
           setTimeout(typeWriter, typeSpeed); // other lines are printed out at normal speed
         }
     } else {
-      typewriterElement.textContent += '\n'; // Move to the next line if last letter is reached
+      text.textContent += '\n'; // Move to the next line if last letter is reached
       charIndex = 0;
       lineIndex++;
       setTimeout(typeWriter, pauseDuration); // Pause for 1 second after each line is printed
@@ -41,3 +41,5 @@ function typeWriter() {
 
 // Start the typewriter animation by calling the function
 typeWriter();
+
+/* this is not a multi-line comment but it is still a comment */
