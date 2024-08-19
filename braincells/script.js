@@ -12,7 +12,7 @@ if (brainCellCount < 0) {
   const resetButton = document.createElement('button');
   resetButton.innerText = 'Reset';
   // Event listener that activates when button is clicked
-  button.addEventListener('click', () => {
+  resetButton.addEventListener('click', () => {
     alert('This does not work.')
   })
   document.body.appendChild(resetButton);
@@ -69,7 +69,7 @@ if (brainCellCount < 0) {
 // reset function for brainCellCount = negative 'Infinity'
 function reset0() {
   brainCellCount = Math.abs(Math.random() * 10 ** 12 - Math.random() * 10 ** 12);
-  document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
+  /* document.getElementById("braincells").innerHTML = brainCellCount.toPrecision(3);
   document.getElementById("iq").innerHTML = iq.toPrecision(3);
   document.getElementById("notbc").innerHTML = brainCellCount.toPrecision(3) + " brain cells";
   if (brainCellCount < 0) {
@@ -78,7 +78,7 @@ function reset0() {
   } else {
     document.getElementById("bcb").innerHTML = upgrade1mult.toPrecision(3);
     document.getElementById("iqb").innerHTML = previousIq.toPrecision(3);
-  }
+  } */
 }
 
 // reset function for brainCellCount = positive 'Infinity'
