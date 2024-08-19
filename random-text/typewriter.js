@@ -31,7 +31,7 @@ function typeWriter() {
           setTimeout(typeWriter, typeSpeed); // other lines are printed out at normal speed
         }
     } else {
-      text.textContent += '\n'; // Move to the next line if last letter is reached
+      text.innerHTML += '<br>'; // Move to the next line if last letter is reached
       charIndex = 0;
       lineIndex++;
       setTimeout(typeWriter, pauseDuration); // Pause for 1 second after each line is printed
