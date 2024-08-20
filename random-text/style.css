@@ -1,4 +1,4 @@
-body {
+#text {
   background: black;
   font-family: "Lucida Console", "Courier New";
   white-space: pre-wrap;
@@ -10,7 +10,7 @@ body {
 }
 
 @keyframes blinkingCursor {
-  0% {border-right: transparent;}
+  0% {border-right: transparent;} /* start */
   50% {border-right: 2px solid red;}
-  100% {border-right: transparent;}
+  100% {border-right: transparent;} /* end */
 }
