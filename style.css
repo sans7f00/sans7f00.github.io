@@ -20,9 +20,6 @@ p {
 }
 img {
   box-shadow: 5px 5px 25px rgba(0, 255, 255, 0.25); 
-  animation-name: fade;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes fade {
