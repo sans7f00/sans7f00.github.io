@@ -14,4 +14,4 @@
 Please create a new issue in the Issues tab. I will check every few days or so.
 
 ### Notes
-*Does not apply to any files in the .github folder, the LICENSE, README.md, and the image ($sans.jpeg).
+*Does not apply to any files in the .github folder, the LICENSE, README.md, and $sans.jpeg.
