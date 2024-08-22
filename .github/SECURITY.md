@@ -13,5 +13,5 @@
 ## Reporting a Vulnerability
 Please create a new issue in the Issues tab. I will check every few days or so.
 
-### Notes
+### Notes<hr>
 *Does not apply to any files in the .github folder, the LICENSE, README.md, and $sans.jpeg.
