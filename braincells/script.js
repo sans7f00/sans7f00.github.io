@@ -13,7 +13,10 @@ if (brainCellCount < 0) {
   resetButton.innerText = 'Reset';
   // Event listener that activates when button is clicked
   resetButton.addEventListener('click', () => {
-    alert('This does not work.')
+    if (brainCellCount == Number.NEGATIVE_INFINITY) {
+      reset0();
+      alert('Your brain cell count has been reset.')
+    }
   })
   document.body.appendChild(resetButton);
   // this happens every 50 ms
