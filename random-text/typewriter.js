@@ -14,7 +14,7 @@ const lines = [line1, line2, line3, line4, line5, line6, line7, line8, line9];
 // in most programming languages, index starts at 0
 let lineIndex = 0;
 let charIndex = 0;
-let typeSpeed = 55; // in ms
+let typeSpeed = 39; // in ms
 let pauseDuration = 1000; // in ms; this is equal to 1 sec
 const allText = document.getElementById('text');
 
