@@ -21,7 +21,7 @@ p {
 
 @keyframes fade {
   0%, 100% {opacity: 1;}
-  50% {opacity: 0;}
+  33%, 67% {opacity: 0;}
 }
 @keyframes changeColor0 {
   0.00%, 100% {color: red;}
