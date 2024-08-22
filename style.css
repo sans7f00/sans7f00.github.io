@@ -6,9 +6,24 @@ body {
 h1 {
   color: red;
   font-size: 108px;
+  animation-name: fade0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 p {
   color: cyan;
   font-size: 18px;
   line-height: normal;
+  animation-name: fade1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade0 {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+@keyframes fade1 {
+  0%, 100% {opacity: 0;}
+  50% {opacity: 1;}
 }
