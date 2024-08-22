@@ -1,7 +1,7 @@
 # Security Policy
 
-## Supported Versions
-> **v2.7.0 and over** - _Supported*_
+## Supported Versions*
+> **v2.7.0 and over** - _Supported_
 > <br>
 > **under v2.7.0** - _Deprecated_
 
@@ -14,4 +14,4 @@
 Please create a new issue in the Issues tab. I will check every few days or so.
 
 ### Notes
-* Only applies to braincells and random-text
+*Does not apply to any files in the .github folder, the LICENSE, README.md, and the image ($sans.jpeg).
