@@ -7,7 +7,7 @@ h1 {
   color: red;
   font-size: 108px;
   animation-name: fade0;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 p {
@@ -15,7 +15,7 @@ p {
   font-size: 18px;
   line-height: normal;
   animation-name: fade1;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
