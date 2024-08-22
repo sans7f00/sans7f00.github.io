@@ -6,24 +6,30 @@ body {
 h1 {
   color: red;
   font-size: 108px;
-  animation-name: fade0;
-  animation-duration: 2s;
+  animation-name: fade, changeColor0;
+  animation-duration: 10s, 5s;
   animation-iteration-count: infinite;
 }
 p {
   color: cyan;
   font-size: 18px;
   line-height: normal;
-  animation-name: fade1;
-  animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
-@keyframes fade0 {
+@keyframes fade {
   0%, 100% {opacity: 1;}
   50% {opacity: 0;}
 }
-@keyframes fade1 {
-  0%, 100% {opacity: 0;}
-  50% {opacity: 1;}
+@keyframes changeColor0 {
+  0.00%, 100% {color: red;}
+  6.66%, 93.3% {color: orange;}
+  13.3%, 86.6% {color: yellow;}
+  20.0%, 80.0% {color: lime;}
+  26.6%, 73.3% {color: cyan;}
+  33.3%, 66.6% {color: blue;}
+  40.0%, 60.0% {color: purple;}
+  46.6%, 53.3% {color: pink;}
 }
