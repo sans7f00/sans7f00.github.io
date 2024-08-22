@@ -7,7 +7,7 @@ h1 {
   color: red;
   font-size: 108px;
   animation-name: fade, changeColor0;
-  animation-duration: 3s, 2s;
+  animation-duration: 3s, 1s;
   animation-iteration-count: infinite;
 }
 p {
@@ -21,7 +21,6 @@ p {
 
 @keyframes fade {
   0%, 100% {opacity: 1;}
-  25%, 75% {opacity: 0.5;}
   50% {opacity: 0;}
 }
 @keyframes changeColor0 {
