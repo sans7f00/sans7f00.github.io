@@ -9,6 +9,6 @@
 Please create a new issue in the Issues tab. I will check every few days or so.
 
 ### Notes
-homepage is at **_v2.9_**
-braincells is at **_v2.7_**
-random-text is at **_v2.8_**
+homepage is at **_v2.9_** <br>
+braincells is at **_v2.7_** <br>
+random-text is at **_v2.8_** <br>
