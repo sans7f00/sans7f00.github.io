@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>random platformer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      // variables setup
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      let canvas.width = window.innerWidth;
+      let canvas.height = window.innerHeight;
+
+      ctx.fillStyle('#404040');
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      window.addEventListener('resize', function() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+
+      class Player {
+        constructor() {
+          this.idk = 5; // being replaced soon
+        }
+      }
+    </script>
+  </body>
+</html>
