@@ -1,3 +1,7 @@
+/* WARNING!
+This code does not work.
+I will fix this in September */
+
 // variables setup
 var canvas = document.getElementById('canvas0');
 var ctx = canvas.getContext('2d');
