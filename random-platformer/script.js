@@ -1,5 +1,5 @@
 // variables setup
-var canvas = document.getElementById('canvas');
+var canvas = document.getElementById('canvas0');
 var ctx = canvas.getContext('2d');
 let canvas.width = window.innerWidth;
 let canvas.height = window.innerHeight;
