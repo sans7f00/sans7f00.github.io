@@ -11,10 +11,6 @@ player = new Player();
 
 ctx.fillStyle = '#404040';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
-window.addEventListener('resize', function() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
 
 class Player {
   constructor() {
